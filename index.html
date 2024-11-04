@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Punching Game</title>
+    <style>
+        #gameCanvas {
+            border: 1px solid black;
+        }
+        #inventoryPanel {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            display: none;
+        }
+        #shopPanel {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            display: none;
+        }
+        #squareCharacterShopPanel {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            display: none;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <button id="inventoryToggle">Inventory</button>
+    <div id="inventoryPanel">
+        <ul id="inventoryItems"></ul>
+        <button id="equipButtonBottle">Equip Bottle</button>
+        <button id="equipButtonBelt">Equip Belt</button>
+        <button id="equipButtonWhip">Equip Whip</button>
+        <button id="equipButtonMace">Equip Mace</button>
+        <button id="equipButtonKnife">Equip Knife</button>
+        <button id="equipButtonSword">Equip Sword</button>
+        <button id="equipButtonPistol">Equip Pistol</button>
+        <button id="equipButtonRevolver">Equip Revolver</button>
+        <button id="equipButtonSMG">Equip SMG</button>
+        <button id="equipButtonak">Equip AK-47</button>
+        <button id="equipButtonChainsaw">Equip Chainsaw</button>
+        <button id="equipButtonLunchly">Equip Lunchly</button>
+        <button id="equipButtonMinigun">Equip Minigun</button>
+    </div>
+    <button id="shopButton">Shop</button>
+    <button id="characterShopButton">Character Shop</button>
+    <button id="respawnButton">Respawn</button>
+    <script src="script.js"></script>
+</body>
+</html>
